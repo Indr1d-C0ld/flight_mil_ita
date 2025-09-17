@@ -24,17 +24,6 @@ Entrambi gli script sono pensati per essere lanciati da cron o systemd.
 
 ---
 
-## 📂 Struttura progetto
-
-flight_mil_ita/
-├── mil_logger.py # raccolta voli militari, output su CSV
-├── publish_adsb_report.py # genera post Hugo dai dati raccolti
-├── mil.csv # CSV con i contatti militari (output logger)
-├── events.db # DB SQLite (popolato da publish_adsb_report.py)
-└── README.md # documentazione progetto
-
----
-
 ## ⚙️ Requisiti
 
 - Python 3.9+
