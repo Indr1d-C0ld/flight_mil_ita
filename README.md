@@ -53,24 +53,3 @@ Mensile:
 python3 publish_adsb_report.py --period monthly
 
 I post vengono salvati in ~/blog/content/posts/<anno>/YYYY-MM-DD-monitor-mil-report.md.
-
-🔄 Automazione
-
-Puoi automatizzare con systemd:
-
-/etc/systemd/system/mil_logger.service
-
-[Unit]
-Description=ADS-B Military Logger
-After=network.target
-
-[Service]
-ExecStart=/usr/bin/python3 /home/pi/flight_mil_ita/mil_logger.py --csv /home/pi/flight_mil_ita/mil.csv --interval 120
-WorkingDirectory=/home/pi/flight_mil_ita
-Restart=always
-
-[Install]
-WantedBy=multi-user.target
-
-E con cron per la pubblicazione giornaliera:
-0 23 * * * /usr/bin/python3 /home/pi/flight_mil_ita/publish_adsb_report.py --period daily
