@@ -65,11 +65,6 @@ python3 publish_adsb_report.py --period monthly
 
 I post vengono salvati in ~/blog/content/posts/<anno>/YYYY-MM-DD-monitor-mil-report.md.
 
-📊 Esempio output tabella
-first_seen_utc	hex	callsign	reg	model_t	lat	lon	alt_ft	gs_kt	squawk	ground
-2025-09-17 08:15 UTC	43ea87	MCNZI	MM12345	A139	45.1	9.2	12000	240	7000	0
-2025-09-17 09:42 UTC	43ea99	ITA412	MM67890	C130	41.9	12.5	18000	320	7000
-
 🔄 Automazione
 
 Puoi automatizzare con systemd:
