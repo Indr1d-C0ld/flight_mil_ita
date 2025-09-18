@@ -5,7 +5,7 @@ Questo progetto raccoglie un insieme di script per il **monitoraggio dei voli mi
 ## 📌 Funzionalità principali
 
 - **Raccolta voli militari**  
-  Lo script `mil_logger.py` interroga l’endpoint pubblico [`/v2/mil`](https://opendata.adsb.fi/api/v2/mil) e registra solo i contatti con flag militare.
+  Lo script `flight_mil_ita.py` interroga l’endpoint pubblico [`/v2/mil`](https://opendata.adsb.fi/api/v2/mil) e registra solo i contatti con flag militare.
 - **Filtro geografico (opzionale)**  
   Possibilità di limitare i contatti ai poligoni definiti in un file GeoJSON (`--polygons-file`).
 - **Registrazione CSV**  
