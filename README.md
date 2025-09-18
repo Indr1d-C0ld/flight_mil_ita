@@ -36,10 +36,10 @@ Entrambi gli script sono pensati per essere lanciati da cron o systemd.
 1. Avviare il logger
 
 Avvia la raccolta dei voli militari con intervallo di polling (default 60 secondi):
-python3 mil_logger.py --interval 120 --csv /home/pi/flight_mil_ita/mil.csv
+python3 flight_mil_ita.py --interval 120 --csv /home/pi/flight_mil_ita/mil.csv
 
 Con filtro GeoJSON (es. poligoni Italia):
-python3 mil_logger.py --polygons-file polygons_italy.geojson
+python3 flight_mil_ita.py --polygons-file polygons_italy.geojson
 
 2. Pubblicare report
 
