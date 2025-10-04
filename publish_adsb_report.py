@@ -220,10 +220,9 @@ def main():
 
     # Costruisci link pubblico
     post_url = f"{BASE_URL}/{filename.replace('.md','')}/"
-    msg = f"🛩️ Nuovo report pubblicato:\n{title}\n{post_url}"
-
+    
     # Notifica Telegram
-    send_telegram_message(msg)
+    send_telegram_message(post_url)
 
 if __name__ == "__main__":
     main()
